@@ -2,8 +2,14 @@
 
 ## Setup del proyecto
 
+Introducir los siguientes comandos en terminal:
+
 ```
 git clone https://github.com/Davidhdm/user-history-app.git
+```
+
+```
+cd user-history-app
 ```
 
 ```
