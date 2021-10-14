@@ -28,6 +28,10 @@ npm run dev
 php artisan migrate:fresh --seed
 ```
 
+```
+php artisan serve
+```
+
 El seeder crea 2 usuarios:
 
 user1@example.com<br>
