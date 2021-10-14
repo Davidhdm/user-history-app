@@ -10004,3 +10004,34 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.wrapper {
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.offerTitle {
+  font-weight: 700;
+}
+
+.offerCard {
+  margin: 20px;
+}
+
+.codeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px #e2e2e2;
+  border-radius: 5px;
+  padding: 5px;
+  padding-left: 15px;
+  max-width: 300px;
+  margin: 25px auto;
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.6);
+}
+
+.code {
+  font-weight: 700;
+  font-size: 16px;
+}

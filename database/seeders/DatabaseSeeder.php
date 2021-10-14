@@ -2,6 +2,8 @@
 
 namespace Database\Seeders;
 
+use App\Models\Offer;
+use App\Models\User;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -12,7 +14,14 @@ class DatabaseSeeder extends Seeder
      * @return void
      */
     public function run()
-    {
-        // \App\Models\User::factory(10)->create();
+    {   
+        User::factory()->create([
+          'email' => 'user1@example.com'
+        ]);
+        User::factory()->create([
+          'email' => 'user2@example.com'
+        ]);
+
+        Offer::factory(10)->create();
     }
 }

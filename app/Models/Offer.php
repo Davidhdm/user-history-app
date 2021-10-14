@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Offer extends Model
 {
-    use HasFactory;
+  use HasFactory;
+
+  protected $fillable = [
+    'title',
+    'img',
+    'description'
+  ];
 }

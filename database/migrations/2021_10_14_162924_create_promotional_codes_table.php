@@ -15,7 +15,8 @@ class CreatePromotionalCodesTable extends Migration
   {
     Schema::create('promotional_codes', function (Blueprint $table) {
       $table->id();
-      $table->string('code');
+      $table->string('code')->unique();
+      $table->boolean('claimed')->default(false);
       $table->foreign('user_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
       $table->unsignedBigInteger('user_id');
       $table->timestamps();

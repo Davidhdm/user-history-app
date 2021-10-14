@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Offer;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +24,7 @@ class HomeController extends Controller
    */
   public function index()
   {
-    return view('home');
+    $offers = Offer::all();
+    return view('home', compact('offers'));
   }
 }
