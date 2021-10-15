@@ -22,7 +22,9 @@ class PromotionalCodeFactory extends Factory
   public function definition()
   {
     return [
-      //
+      'code' => $this->faker->regexify('[A-Za-z0-9]{15}'),
+      'claimed' => false,
+      'user_id' => 1
     ];
   }
 }

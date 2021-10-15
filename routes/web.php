@@ -19,5 +19,5 @@ Auth::routes();
 Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/my_promotional_codes', [PromotionalCodeController::class, 'index'])->name('promotional_codes')->middleware('auth');
-Route::get('/get_the_code', [PromotionalCodeController::class, 'createNewCode'])->middleware('auth');
-Route::get('/claim_code/{id}', [PromotionalCodeController::class, 'claimCode'])->middleware('auth');
+Route::get('/get_the_code', [PromotionalCodeController::class, 'createNewCode'])->name('get_the_code')->middleware('auth');
+Route::get('/claim_code/{id}', [PromotionalCodeController::class, 'claimCode'])->name('claim_code')->middleware('auth');

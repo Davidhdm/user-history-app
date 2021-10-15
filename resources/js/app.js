@@ -7,7 +7,7 @@ require('./bootstrap');
       swal({
         title: 'Done!',
         text: 'The code was claimed successfully.',
-        timer: 2000,
+        timer: 4000,
         button: false
       })/* .then(
         function () { },
@@ -24,7 +24,7 @@ require('./bootstrap');
       swal({
         title: 'Error',
         text: 'This code has already been claimed.',
-        timer: 2000,
+        timer: 4000,
         button: false
       })
     }
@@ -33,7 +33,7 @@ require('./bootstrap');
       swal({
         title: 'Done!',
         text: 'You can now go to the "My promotional codes" section and claim it.',
-        timer: 2000,
+        timer: 4000,
         button: false
       })
     }

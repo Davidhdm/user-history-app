@@ -35,6 +35,7 @@ class PromotionalCodeController extends Controller
       'code' => $newRandomCode,
       'user_id' => $loggedUser->id
     ]);
+    sleep(4);
     return redirect()->route('home');
   }
 
@@ -44,6 +45,7 @@ class PromotionalCodeController extends Controller
     $code->update([
       'claimed' => true
     ]);
+    sleep(4);
     return redirect()->route('promotional_codes');
   }
 }
