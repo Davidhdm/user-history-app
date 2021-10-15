@@ -2,8 +2,14 @@
 
 ## Setup del proyecto
 
+Introducir los siguientes comandos en terminal:
+
 ```
 git clone https://github.com/Davidhdm/user-history-app.git
+```
+
+```
+cd user-history-app
 ```
 
 ```
@@ -20,6 +26,10 @@ npm run dev
 
 ```
 php artisan migrate:fresh --seed
+```
+
+```
+php artisan serve
 ```
 
 El seeder crea 2 usuarios:
